@@ -1,0 +1,713 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>发布项目——草稿状态项目编辑</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<link href="../css/global.css" rel="stylesheet" type="text/css">
+<link href="../css/animation.css" rel="stylesheet" type="text/css">
+<script src="../js/jquery 1.11.0.js" type="text/javascript"></script>
+<script src="../js/common.js" type="text/javascript"></script>
+<script src="../js/jquery.hoveraccordion.js" type="text/javascript"></script>
+</head>
+
+<body class="usercenter_body">
+<!--Begin header-->
+<div class="top_header">
+    <div class="header_content clearfix">
+        <div class="logo"></div>
+        <ul class="top_nav">
+            <li><a href="../index.html">首页</a></li>
+            <li id="find_chq">
+            	<a href="../发现传奇.html" class="find_chq_title">发现传奇</a>
+                <span></span>
+            	<div class="find_chq_list hide">
+                	<p><a href="../预热项目.html">预热项目</a></p>
+                    <p><a href="../融资项目.html">融资项目</a></p>
+                    <p class="disable_li"><a>运营项目</a></p>
+                </div>
+            </li>
+            <li><a href="../安全保障.html">安全保障</a></li>
+            <li><a href="../众创基地.html">众创基地</a></li>
+        </ul>
+        <div class="rtop_wrap">
+        	<!--Begin 登录前-->
+            <div class="login_on hide">
+                <div><a href="#" class="click_register">注册</a><span></span></div>
+                <div><a href="#" class="click_login">登录</a></div>
+            </div>
+            <!--End 登录前-->
+            <!--Begin 登录后-->
+            <div class="login_off clearfix">
+                <div class="user_infor clearfix f_fl">
+                    <img src="../images/user_icon_03.png" class="f_fl">
+                    <div class="f_fl">欢迎您：<em>操道平</em></div>
+                </div>
+                
+                <!--Begin 用户中心子菜单-->
+                <ol class="usercener_list hide">
+                    
+                        <li><a href="index.html">个人中心</a></li>
+                        <li><a href="publishProject.html">发布项目</a></li>
+                        <li><a href="我的项目.html">我的项目</a></li>
+                        <li><a href="账户资金.html">账户资金</a></li>
+                        <li><a href="消息动态.html">消息动态</a></li>
+                        <li><a href="../index.html">安全退出</a></li>
+                  
+                </ol>
+                <!--End 用户中心子菜单-->
+            </div>
+            <!--End 登录后-->
+        </div>
+    </div>
+</div>
+
+<div class="nav_box_bg">
+	<div class="nav_box">
+    	<span class="f_24"><a href="#">传奇工场&nbsp;|&nbsp;</a></span>
+        <span class="f_18"><a href="#">用户中心</a></span>
+    </div>
+</div>
+<!--End header-->
+
+<!--Begin 用户中心内容背景-->
+<!--<div class="usercenter_bg">
+    <div class="usercenter_bg2"></div>
+</div>-->
+<!--End 用户中心内容背景-->
+
+
+<!--Begin 发布项目——项目老板-->
+<div class="usercenter_bgs">
+    <div class="usercontent clearfix ">
+        <div class="f_fl usercenter_left">
+            <ul class="helpCenter_leftBar active_square usercenter_leftBar" id="slide_subMenu">
+                <li class="help_change_li">
+                    <u class="square_lb"></u>
+                    <u class="square_rt"></u>
+                    <span class="left_img1"></span>
+                    <a href="index.html">个人中心</a>
+                    <ul class="helpCenter_leftSubBar">
+                        <li><a href="safeSet.html" class="active_subMenu">安全保障</a></li>
+                        <li><a href="perfectData.html">完善资料</a></li>
+                    </ul>
+                    <em class="help_arrow"></em>
+                </li>
+                <li class="help_change_li">
+                    <u class="square_lb"></u>
+                    <u class="square_rt"></u>
+                    <span class="left_img2"></span>
+                    <a href="我的项目.html">我的项目</a>
+                    <ul class="helpCenter_leftSubBar">
+                        <li><a href="认购的项目.html">认购的项目</a></li>
+                        <li><a href="发布的项目.html">发布的项目</a></li>
+                        <li><a href="项目草稿箱.html">项目草稿箱</a></li>
+                    </ul>
+                    <em class="help_arrow"></em>
+                </li>
+                <li class="help_change_li help_active_li">
+                    <u class="square_lb"></u>
+                    <u class="square_rt"></u>
+                    <span class="left_img3"></span>
+                    <a href="publishProject.html">发布项目</a>
+                    <em class="help_arrow help_blue_bg"></em>
+                </li>
+                <li class="help_change_li">
+                    <u class="square_lb"></u>
+                    <u class="square_rt"></u>
+                    <span class="left_img4"></span>
+                    <a href="账户资金.html">账户资金</a>
+                    <em class="help_arrow help_blue_bg"></em>
+                </li>
+                <li class="help_change_li">
+                    <u class="square_lb"></u>
+                    <u class="square_rt"></u>
+                    <span class="left_img5"></span>
+                    <a href="消息动态.html">消息动态</a>
+                    <em class="help_arrow help_blue_bg"></em>
+                </li>
+            </ul>
+            <div class="tel_box">
+                <div class="tel_icon">联系我们</div>
+                <div class="tel_num">400-666-5412</div>
+                <div class="kf_time">周一至周五（09:00-17:30）</div>
+            </div>
+        </div>
+        <div class="right_bar f_fr">
+            <div class="publish_box">
+                <div class="publish_step">
+                    <ul class="publish_list publish_third">
+                        <li>基本资料</li>
+                        <li>股权设置</li>
+                        <li>草稿状态项目编辑</li>
+                        <li>相关协议</li>
+                        <li class="publish_list_last">传奇工场审核</li>
+                    </ul>
+                </div>
+                <div class="edit_subTitle"><span>店铺简介</span></div>
+                <div class="infor_list">
+                    <div><span>背景图宣传图</span><em class="modify_bgImg">修改</em></div>
+                    <div><span>项目展示封面</span><em class="modify_homeImg">修改</em></div>
+                    <div><span>店铺基本信息</span><em class="modify_shop">修改</em></div>
+                    <div>
+                        <span>项目视频展示</span>
+                        <div class="f_fl vedio_show">
+                            <div class="show_item"><input type="radio" checked="checked">预热展示</div>
+                            <div class="show_item"><input type="radio">项目路演</div>
+                            <div class="show_item"><input type="radio">融资对接</div>
+                            <div class="show_item"><input type="radio">实体考察</div>
+                            <div class="show_item"><input type="radio">融资成功</div>
+                            <div class="show_item"><input type="radio">合伙会议</div>
+                            <div class="show_item"><input type="radio">融后发展</div>
+                            <div class="show_item"><input type="radio">店铺开业</div>
+                        </div>
+                        <em class="modify_video">修改</em>
+                    </div>
+                    <div><span>编辑项目介绍</span><em class="modify_editProject">修改</em></div>
+                    <div><span>证件提交</span><em class="modify_zhj">修改</em></div>
+                    <div><span>修改融资需求</span><em class="modify_trade">修改</em></div>
+                </div>
+                <div class="edit_subTitle"><span>预算及退出</span></div>
+                <div class="infor_list">
+                    <div><span>现有店铺概括</span><em class="modify_existShop">修改</em></div>
+                    <div><span>开店计划</span><em class="modify_openShopPlan">修改</em></div>
+                    <div><span>退出机制</span><em class="modify_quitJzh">修改</em></div>
+                </div>
+                <div class="step_btns clearfix">
+                    <a href="javascript:history.back(-1);" class="step_btn f_fl">上一步</a>
+                    <a href="发布项目—相关协议.html" class="step_btn f_fl">下一步</a>
+                </div>
+            </div>
+            <div class="h_30"></div>
+        </div>
+    </div>
+</div>
+<!--End 发布项目——项目老板-->
+
+<!--Begin弹框-->
+
+	<!--Begin 登录、注册对话框-->
+    <div class="module_dialog login_dialog" id="register_box">
+    	<div class="module_header">
+        	<button class="module_close f_fr">×</button>
+            <div class="login_title">
+            	<h4 class="module_title f_fl title_register">注册</h4>
+                <span class="f_fl"></span>
+                <h4 class="module_title f_fl title_login">登录</h4>
+            </div>
+        </div>
+        <div class="module_body">
+        	<!--Begin 注册对话框-->
+        	<div class="dialog_form" id="register_form">
+                <form action="">
+                	<div class="item new_item"><span>手机号：</span><input type="text" name="telephone"></div>
+                    <div class="item new_item clearfix">
+                    	<span class="f_fl">验证码：</span>
+                        <input type="text" name="img_yzm" placeholder="请输入图形码" class="yzm_input f_fl">
+                        <div class="img_yzm f_fl"><../img src="images/yzm_03.png"></div>
+                        <a href="#" class="refresh f_fl"><../img src="images/update_icon_03.png"></a>
+                    </div>
+                    <div class="item new_item clearfix">
+                    	<span class="f_fl">&nbsp;</span>
+                        <input type="text" name="img_yzm" placeholder="请输入验证码" class="yzm_input f_fl">
+                        <button class="btn_style getYzm_btn">获取验证码</button>
+                    </div>
+                    <div class="item new_item"><span>密码：</span><input type="password" name="password"></div>
+                    <div class="agree"><input type="checkbox" name="checkbox" checked="checked">我已阅读并同意<a href="">《传奇工场服务协议》</a></div>
+                    <input type="submit" name="button" value="注册" class="btn_style btn_wh ml_100">                    
+                </form>
+            </div>
+            <!--End 注册对话框-->
+            
+            <!--Begin 登录对话框-->
+            <div class="dialog_form  hide" id="login_form">
+                <form action="">
+                	<div class="item new_item"><span>手机号：</span><input type="text" name="telephone"></div>
+                    <div class="item new_item"><span>密码：</span><input type="password" name="password"></div>
+                    <div class="agree forget_div"><input type="checkbox"><span>记住密码</span><a href="忘记密码1.html" class="f_fr">忘记密码?</a></div>
+                    <input type="submit" name="button" value="登录" class="btn_style btn_wh ml_100">                    
+                </form>
+            </div>
+            <!--End 登录对话框-->
+            
+        </div>
+    </div>
+    <!--End 登录、注册对话框-->
+
+	<!--Begin 修改背景展示图-->
+    <div class="module_dialog status_dialog" id="bg_showImg">
+    	<div class="module_header">
+        	<button class="module_close f_fr">×</button>
+            <h4 class="module_title">修改背景展示图</h4>
+        </div>
+        <div class="module_body status_body">
+        	<div class="dialog_form cg_dialog">
+                <p class="show_shm">您可以选择一张最能展现您项目的一张图片作为背景图</p>
+                <form action="">
+                	<dl class="clearfix modify_head selectTxt">
+                    	<dt class="f_fl"><img src="../images/yzm_03.png"></dt>
+                        <dd class="f_fr">
+                        	<em>图片格式支持jpg,jpeg,png格式，大小不能超过2M</em>
+                            <span class="select_file">选择文件></span>
+                        </dd>
+                    </dl>
+                    <div class="dia_btns">
+                        <button class="dia_submit">提交</button>
+                        <button class="cancel">取消</button>
+                	</div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <!--End 修改背景展示图-->
+    
+    <!--Begin 修改封面展示图-->
+    <div class="module_dialog status_dialog" id="home_showImg">
+    	<div class="module_header">
+        	<button class="module_close f_fr">×</button>
+            <h4 class="module_title">修改封面展示图</h4>
+        </div>
+        <div class="module_body status_body">
+        	<div class="dialog_form cg_dialog">
+                <p class="show_shm">您可以选择一张最能展现您项目的一张图片作为封面图</p>
+                <form action="">
+                	<dl class="clearfix modify_head selectTxt">
+                    	<dt class="f_fl"><img src="../images/yzm_03.png"></dt>
+                        <dd class="f_fr">
+                        	<em>图片格式支持jpg,jpeg,png格式，大小不能超过2M</em>
+                            <span class="select_file">选择文件></span>
+                        </dd>
+                    </dl>
+                    <div class="dia_btns">
+                        <button class="dia_submit">提交</button>
+                        <button class="cancel">取消</button>
+                	</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--End 修改封面展示图-->
+    
+    <!--Begin 项目基本信息修改-->
+    <div class="module_dialog status_dialog" id="basic_infor">
+    	<div class="module_header">
+        	<button class="module_close f_fr">×</button>
+            <h4 class="module_title">项目基本信息修改</h4>
+        </div>
+        <div class="module_body status_body">
+        	<div class="dialog_form cg_dialog">
+                <form action="">
+                	<div class="item basic_item"><span>项目名称：</span><input type="text" name="projectName"></div>
+                    <div class="item basic_item"><span>一句话介绍：</span><input type="text" name="a_word"></div>
+                    <div class="item basic_item clearfix">
+                    	<span class="f_fl">行业：</span>
+                        <select class="select_1 basic_select">
+                        	<option>美食</option>
+                            <option>旅游</option>
+                        </select>
+                        <select class="select_1 basic_select">
+                        	<option>火锅</option>
+                            <option>青海</option>
+                        </select>
+                    </div>
+                    <div class="item basic_item clearfix">
+                    	<span class="f_fl">所在地：</span>
+                        <select class="select_1 basic_select">
+                        	<option>请选择省份</option>
+                            <option>北京</option>
+                        </select>
+                        <select class="select_1 basic_select">
+                        	<option>请选择城市</option>
+                            <option>北京</option>
+                        </select>
+                        <select class="select_1 basic_select">
+                        	<option>请选择地区</option>
+                            <option>海淀区</option>
+                        </select>
+                    </div>
+                    <div class="item basic_item"><span></span><input type="text" name="street_address"><em>街道地址</em></div>
+                    <div class="dia_btns">
+                        <button class="dia_submit">提交</button>
+                        <button class="cancel">取消</button>
+                	</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--End 项目基本信息修改-->
+    
+    <!--Begin 添加修改视频-->
+    <div class="module_dialog status_dialog" id="add_modifyVideo">
+    	<div class="module_header">
+        	<button class="module_close f_fr">×</button>
+            <h4 class="module_title">添加修改视频</h4>
+        </div>
+        <div class="module_body status_body">
+        	<div class="dialog_form cg_dialog">
+                <p class="show_shm">请输入视频地址：（支持优酷、土豆、酷六等视频网站视频，只能是html的视频代码） 如：上传优酷视频，找到视频下方的“分享”，点击向下的箭头，复制html代码即可</p>
+                <form action="">
+                	<textarea></textarea>
+                    <div class="dia_btns">
+                        <button class="dia_submit">提交</button>
+                        <button class="cancel">取消</button>
+                	</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--End 添加修改视频-->
+    
+    <!--Begin 编辑项目介绍-->
+    <div class="module_dialog edit_box" id="editProject_infor">
+    	<div class="module_header">
+        	<button class="module_close f_fr">×</button>
+            <h4 class="module_title">编辑项目介绍</h4>
+        </div>
+        <div class="module_body status_body">
+        	<div class="dialog_form cg_dialog edit_dialog">
+                <form action="">
+                	<div class="edit_wrap"><img src="../images/edit_container_03.png"></div>
+                    <div class="dia_btns">
+                        <button class="dia_submit">提交</button>
+                        <button class="cancel">取消</button>
+                	</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--End 编辑项目介绍-->
+    
+    <!--Begin 证件提交-->
+    <div class="module_dialog status_dialog" id="zhj_submit">
+    	<div class="module_header">
+        	<button class="module_close f_fr">×</button>
+            <h4 class="module_title">证件提交</h4>
+        </div>
+        <div class="module_body exist_shop_body padd_rl">
+        	<div class="dialog_form zhj_dialog">
+            	<div class="certificate_form">
+                    <form action="">
+                        <ul class="zhj_submit">
+                            <li>
+                                <h2>法定代表人</h2>
+                                <span class="select_file">选择文件></span>
+                                <em>上传成功</em>
+                            </li>
+                            <li>
+                                <h2>法定代表个人信用报告</h2>
+                                <span class="select_file">选择文件></span>
+                                <em>还未提交</em>
+                            </li>
+                            <li>
+                                <h2>营业执照</h2>
+                                <span class="select_file">选择文件></span>
+                                <em>还未提交</em>
+                            </li>
+                            <li>
+                                <h2>营业执照副本</h2>
+                                <span class="select_file">选择文件></span>
+                                <em>还未提交</em>
+                            </li>
+                            <li>
+                                <h2>税务登记证</h2>
+                                <span class="select_file">选择文件></span>
+                                <em>还未提交</em>
+                            </li>
+                            <li>
+                                <h2>税务登记证副本</h2>
+                                <span class="select_file">选择文件></span>
+                                <em>还未提交</em>
+                            </li>
+                            <li>
+                                <h2>组织机构代码证</h2>
+                                <span class="select_file">选择文件></span>
+                                <em>还未提交</em>
+                            </li>
+                            <li>
+                                <h2>组织机构代码证副本</h2>
+                                <span class="select_file">选择文件></span>
+                                <em>还未提交</em>
+                            </li>
+                            <li>
+                                <h2>公司照片</h2>
+                                <span class="select_file">选择文件></span>
+                                <em>还未提交</em>
+                            </li>
+                            <li>
+                                <h2>场地租凭合同</h2>
+                                <span class="select_file">选择文件></span>
+                                <em>还未提交</em>
+                            </li>
+                            <li>
+                                <h2>财务报表</h2>
+                                <span class="select_file">选择文件></span>
+                                <em>还未提交</em>
+                            </li>
+                            <li>
+                                <h2>卫生许可证</h2>
+                                <span class="select_file">选择文件></span>
+                                <em>还未提交</em>
+                            </li>
+                        </ul>
+                        <div class="dia_btns">
+                            <button class="dia_submit">提交</button>
+                            <button class="cancel">取消</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End 证件提交-->
+    
+    <!--Begin 融资需求修改-->
+    <div class="module_dialog trade_dialog" id="tradeRequire">
+    	<div class="module_header">
+        	<button class="module_close f_fr">×</button>
+            <h4 class="module_title">融资需求修改</h4>
+        </div>
+        <div class="module_body status_body">
+        	<div class="dialog_form cg_dialog tradeRequire_dialog">
+            	<p class="trade_infor">带<strong>*</strong>为必填项，其他为自动计算</p>
+                <form action="">
+                	<ul class="trade_list clearfix">
+                        <li class="item open_shop red_f"><span><strong>*</strong>开店融资金额：</span><input type="text" name="openShop">&nbsp;元</li>
+                        <li class="item red_f"><span><strong>*</strong>项目方出资金额：</span><input type="text" name="projectChz">&nbsp;元</li>
+                        <li class="item red_f"><span>投资人出资金额：</span><input type="text" name="investChz">&nbsp;元</li>
+                        <li class="item red_f"><span><strong>*</strong>认购份数：</span><input type="text" name="buyNum">&nbsp;份</li>
+                        <li class="item red_f"><span>个人最低投资金额：</span><input type="text" name="z_lowest">&nbsp;元</li>
+                        <li class="item"><span>项目方出资所占比例：</span><input type="text" readonly name="project_rate" value="80">&nbsp;%</li>
+                        <li class="item"><span>投资人出资比例：</span><input type="text" readonly name="invest_rate" value="20">&nbsp;%</li>
+                        <li class="item"><span><strong>*</strong>项目方收益所占比例：</span><input type="text" name="project_income_rate">&nbsp;%</li>
+                        <li class="item"><span>投资人收益比例：</span><input type="text" name="invest_income_rate">&nbsp;%</li>
+                    </ul>
+                    <div class="dia_btns trade_btns">
+                        <button class="dia_submit">提交</button>
+                        <button class="cancel">取消</button>
+                	</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--End 融资需求修改-->
+    
+    <!--Begin 现有店铺概括-->
+    <div class="module_dialog status_dialog" id="exist_shop">
+    	<div class="module_header">
+        	<button class="module_close f_fr">×</button>
+            <h4 class="module_title">现有店铺概括</h4>
+        </div>
+        <div class="module_body exist_shop_body">
+        	<div class="dialog_form cg_dialog">
+                <form action="">
+                	<h1>第一家店铺：</h1>
+                	<div class="item basic_item exist_item"><span>店铺名称：</span><input type="text" name="shoptName"></div>
+                    <div class="item basic_item exist_item"><span>店铺地址：</span><input type="text" name="shopAddress"></div>
+                    <div class="item basic_item exist_item"><span>店铺筹备总投资：</span><input type="text" name="totalAccount">&nbsp;元</div>
+                    <div class="item basic_item exist_item"><span>从筹备到运营周期：</span><input type="text" name="timePeriod">&nbsp;天</div>
+                    <div class="item basic_item exist_item"><span>盈利可分红时间：</span><input type="text" name="fhTime">&nbsp;天</div>
+                    <div class="item basic_item exist_item"><span>店铺营业面积：</span><input type="text" name="yyArea">&nbsp;平米</div>
+                    <div class="item basic_item exist_item"><span>客流量：</span><input type="text" name="customers">&nbsp;位/日</div>
+                    <div class="item basic_item exist_item"><span>人均消费：</span><input type="text" name="perPay">&nbsp;元</div>
+                    <div class="item basic_item exist_item"><span>上年度营业收入：</span><input type="text" name="y_income">&nbsp;元</div>
+                    <div class="item basic_item exist_item"><span>上年度净利润：</span><input type="text" name="y_profit">&nbsp;元</div>
+                    <div class="item basic_item exist_item"><span>上季度营业收入：</span><input type="text" name="jidu_income">&nbsp;元</div>
+                    <div class="item basic_item exist_item"><span>上季度净利润：</span><input type="text" name="jidu_profit">&nbsp;元</div>
+                    <h1 class="top_border">第二家店铺：</h1>
+                    <div class="item basic_item exist_item"><span>店铺名称：</span><input type="text" name="shoptName2"></div>
+                    <div class="item basic_item exist_item"><span>店铺地址：</span><input type="text" name="shopAddress2"></div>
+                    <div class="item basic_item exist_item"><span>店铺筹备总投资：</span><input type="text" name="totalAccount2">&nbsp;元</div>
+                    <div class="item basic_item exist_item"><span>从筹备到运营周期：</span><input type="text" name="timePeriod2">&nbsp;天</div>
+                    <div class="item basic_item exist_item"><span>盈利可分红时间：</span><input type="text" name="fhTime2">&nbsp;天</div>
+                    <div class="item basic_item exist_item"><span>店铺营业面积：</span><input type="text" name="yyArea2">&nbsp;平米</div>
+                    <div class="item basic_item exist_item"><span>客流量：</span><input type="text" name="customers2">&nbsp;位/日</div>
+                    <div class="item basic_item exist_item"><span>人均消费：</span><input type="text" name="perPay2">&nbsp;元</div>
+                    <div class="item basic_item exist_item"><span>上年度营业收入：</span><input type="text" name="y_income2">&nbsp;元</div>
+                    <div class="item basic_item exist_item"><span>上年度净利润：</span><input type="text" name="y_profit2">&nbsp;元</div>
+                    <div class="item basic_item exist_item"><span>上季度营业收入：</span><input type="text" name="jidu_income2">&nbsp;元</div>
+                    <div class="item basic_item exist_item"><span>上季度净利润：</span><input type="text" name="jidu_profit2">&nbsp;元</div>
+                    <div class="dia_btns">
+                        <button class="dia_submit">提交</button>
+                        <button class="cancel">取消</button>
+                	</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--End 现有店铺概括-->
+    
+    <!--Begin 开店计划-->
+    <div class="module_dialog openShop_dialog" id="openShop_plan">
+    	<div class="module_header">
+        	<button class="module_close f_fr">×</button>
+            <h4 class="module_title">开店计划</h4>
+        </div>
+        <div class="module_body openShop_body">
+        	<div class="dialog_form openShop_form">
+                <form action="">
+                	<div class="item basic_item exist_item"><span>预期融资开店数量：</span><input type="text" name="shopNum">&nbsp;家</div>
+                    <div class="item basic_item exist_item"><span>开店筹备时间周期：</span><input type="text" name="period_time">&nbsp;天</div>
+                    <div class="item basic_item exist_item"><span>预期店面地址：</span><input type="text" name="shop_address"></div>
+                    <div class="item basic_item exist_item"><span>预期开业时间：</span><input type="text" name="open_time">&nbsp;（*融资成功后）</div>
+                    <div class="item basic_item exist_item"><span>预期分红时间：</span><input type="text" name="profit_time">&nbsp;天（*融资成功后）</div>
+                    <div class="item basic_item exist_item"><span>第一年预计盈利：</span><input type="text" name="frist_profit_account">&nbsp;元</div>
+                    <div class="item basic_item exist_item txt_area"><span>其他计划：</span><textarea name="other_plan"></textarea></div>
+                    <div class="dia_btns">
+                        <button class="dia_submit">提交</button>
+                        <button class="cancel">取消</button>
+                	</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--End 开店计划-->
+    
+    <!--Begin 退出机制-->
+    <div class="module_dialog" id="quit_jzh">
+    	<div class="module_header">
+        	<button class="module_close f_fr">×</button>
+            <h4 class="module_title">退出机制</h4>
+        </div>
+        <div class="module_body">
+        	<div class="dialog_form quitJzh_form">
+                <form action="">
+                	<table>
+                    	<thead>
+                        	<tr>
+                            	<th class="table_t1">提出方发生条件与解决机制状况类型</th>
+                                <th class="table_t2">份额股转让</th>
+                                <th class="table_t2">份额股回购</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                            	<td class="txt_center">有限合伙人</td>
+                                <td class="td_hei">
+                                	<div>
+                                        <em>如：我想卖出股份</em>
+                                        <br>
+                                        <label>解决方案：</label>
+                                        <textarea></textarea>
+                                    </div>
+                                </td>
+                                <td class="td_hei">
+                                	<div>
+                                        <em>如：我想卖出股份</em>
+                                        <br>
+                                        <label>解决方案：</label>
+                                        <textarea></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="dia_btns">
+                        <button class="dia_submit">提交</button>
+                        <button class="cancel">取消</button>
+                	</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--End 退出机制-->
+    
+    
+<!--End弹框-->
+
+<!--Begin footer-->
+<div class="footer">
+	<div class="footer_wrap">
+    	<img src="../images/logo_03.png">
+        <ul class="friend_links clearfix">
+        	<li><a href="../帮助中心.html">了解我们</a><span></span></li>
+            <li><a href="../新手指引.html">新手指引</a><span></span></li>
+            <li><a href="../帮助中心.html">用户协议</a><span></span></li>
+            <li><a href="../帮助中心.html">常见问题</a><span></span></li>
+            <li><a href="../帮助中心.html">加入我们</a><span></span></li>
+            <li><a href="../帮助中心.html">政策法规</a></li>
+        </ul>
+        <ul class="footer_icon_group clearfix">
+        	<li>
+            	<div class="wx_tips">
+                    <div class="tips_hd clearfix">
+                        <em class="ico_weixin f_fl"></em>
+                        <span class="txt f_fl">微信公众号</span>
+                    </div>
+                    <div class="tips_bd">
+                        <em class="arrow"></em>
+                        <img alt="" src="../images/weixin.jpg">
+                        <p class="wx_txt">微信公众平台</p>
+                    </div>
+                </div>
+            </li>
+            <li class="sina_li">
+            	<a href="http://weibo.com/" class=""><em class="ico_weixin ico_sina f_fl"></em><span class="txt f_fl">新浪微博</span></a>
+            </li>
+            <li class="txwb_li">
+            	<a href="http://t.qq.com/" class=""><em class="ico_weixin ico_txwb f_fl"></em><span class="txt f_fl">腾讯微博</span></a>
+            </li>
+            <li class="qq_li">
+            	<a href="http://baidu.com" class=""><em class="ico_weixin ico_qq f_fl"></em><span class="txt f_fl">QQ客服</span></a>
+            </li>
+            <li class="tel_li">
+            	<em class="ico_weixin ico_tel f_fl"></em><span class="txt f_fl">400-666-5412</span>
+            </li>
+        </ul>
+        <p class="copyright">Copyright@2014 传奇工场-金融综合服务平台 版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备 15027527号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;投资有风险，理财需谨慎</p>
+    </div>	
+</div>
+<!--End footer-->
+
+<div class="momblack"></div>
+
+<script>
+	
+	$(function(){
+		
+		//修改背景图宣传图
+		box_dialog(".modify_bgImg","#bg_showImg");	
+		
+		//修改封面展示图
+		box_dialog(".modify_homeImg","#home_showImg");
+		
+		//修改店铺基本信息
+		box_dialog(".modify_shop","#basic_infor");
+		
+		//修改店铺基本信息
+		box_dialog(".modify_video","#add_modifyVideo");
+		
+		//修改编辑项目信息
+		box_dialog(".modify_editProject","#editProject_infor");
+		
+		//证件提交
+		box_dialog(".modify_zhj","#zhj_submit");
+		
+		//修改融资需求信息
+		box_dialog(".modify_trade","#tradeRequire");
+		
+		//现有店铺概括
+		box_dialog(".modify_existShop","#exist_shop");
+		
+		//开店计划
+		box_dialog(".modify_openShopPlan","#openShop_plan");
+		
+		//退出机制
+		box_dialog(".modify_quitJzh","#quit_jzh");
+		
+		//帮助中心，用户中心显示下拉子菜单，调用JS
+		$('#slide_subMenu').hoverAccordion({
+				//activateItem:8,	     //默认下设置第4个滑动门展开	 
+				//onClickOnly:false,   //点击或悬停触发"false"、"true" 
+				//speed:'fast'         //滑动门切换过渡效果"fast"、"slow"、"normal"
+	
+		});	
+		
+	})
+</script>
+</body>
+</html>
+
+

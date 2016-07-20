@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="js/jquery 1.11.0.js" type="text/javascript"></script>
+<title>系统升级中，敬请期待~</title>
+<style>
+*{ 
+	margin:0;
+	padding:0;
+	font-family:"微软雅黑";
+}
+.system_update{
+	width:100%;
+	background-color:#f2f2f2;
+}
+.system_update img{
+	width:453px; 
+	display:block;
+	margin:0 auto 90px;
+	padding-top:100px;
+}
+.system_update div{
+	width:780px;
+	margin:0 auto;
+	font-size:24px;
+	color:#555;
+	line-height:40px;
+}
+</style>
+</head>
+
+<body>
+<div class="system_update">
+	<img src="images/system_updateIcon_03.png">
+    <div>尊敬的用户：</div>
+    <div>网站正在进行升级维护，预计将于2016年7月10日恢复正常业务。</div>
+    <div>给您造成的不便敬请谅解!&nbsp;&nbsp;;O(∩_∩)O~</div>
+</div>
+
+<script>
+	$(function(){
+		alert($(document).height());
+		$(".system_update").css("height",$(document).height());	
+	})
+</script>
+</body>
+</html>
